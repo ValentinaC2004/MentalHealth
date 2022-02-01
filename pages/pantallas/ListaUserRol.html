@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../img/loguito.jpeg" type="image/x-icon">
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <title>ListaUserRol_MentalHealth</title>
+  </head>
+
+  <body>
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light header" >
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">Mental Health</a>
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+              <a href="../pantallas/info.html" class="nav-link active">
+                <img src="../img/apagar.png" alt="" width="3%" height="3%">
+              </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../pantallas/ListaUser.html"
+                  >Usuarios</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="">Usuarios con rol</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pantallas/ListaTrastornos.html" onclick="">Trastornos</a>
+              </li>
+              <button type="button" class="btn btn-primary position-relative">
+                notificaciones
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  99+
+                  <span class="visually-hidden"></span>
+                </span>
+              </button>
+              
+            </ul>
+            
+                <h4>Admin</h4>
+                
+
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section>
+        
+      <div class="info">
+          <div>
+            <form action="#">
+                <button  class="btn btn">Crear un nuevo Rol</button>
+            </form> <br><br>
+            <form action="#">
+              <button  class="btn btn">Eliminar rol</button>
+            </form><br>
+          </div>
+        <div class="text">
+          <p id="contenido">
+
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">ID_Rol</th>
+                    <th scope="col">Tipo de rol</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1
+                        
+                    </th>
+                    <td>101</td>
+                    <td>Editor</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>102</td>
+                    <td>Administrador</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            
+                      
+                    
+          </p>
+          
+          <div class="text-center">
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+        <div class="info">
+          <div class="text">
+            <p id="contenido">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">
+                      <form action="../pantallas/crearUser.html">
+                        <button  class="btn btn">Modificar roles asignados</button>
+                      </form> <br>
+                      <form action="#">
+                        <button  class="btn btn">Desasignar rol</button>
+                      </form><br>
+                      #</th>
+                    <th scope="col">ID_Usuario</th>
+                    <th scope="col">Nombre de usuario</th>
+                    <th scope="col">Correo</th>
+                    <th scope="col">Contraseña</th>
+                    <th scope="col">Telefono</th>
+                    <th scope="col">Rol asignado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>192</td>
+                    <td>Alejandra coronado</td>
+                    <td>aleja13@gmail.com</td>
+                    <td>.....</td>
+                    <td>3165897097</td>
+                    <td>Usuario destacado</td>
+                  </tr>
+                 
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>748</td>
+                    <td>Laura</td>
+                    <td>coronado2003@hotmail.com</td>
+                    <td>.....</td>
+                    <td>318533456</td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+            </p>
+            
+            <div class="text-center">
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section>
+      <footer class="suelo">
+       <p class="fotter_text">Pagina diseñada por: @ValentinaCossio</p>
+      </footer>
+    </section>
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
